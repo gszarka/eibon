@@ -1,0 +1,15 @@
+Config
+  { font     = "xft:terminus:size=8:bold:antialias=true"
+  , bgColor  = "#252525"
+  , fgColor  = "#B6E354"
+  , position = Static {xpos = 0, ypos = 0, width = 1280, height = 16}
+  , commands =
+    [ Run Cpu ["-L","3","-H","50","--normal","#A6E22E","--high","#EF6769"] 10
+    , Run Memory ["-t", "Mem: <usedratio>%"] 10
+    , Run Date "<fc=#B0C4DE>%a %b %_d %Y %H:%M</fc>  " "date" 10
+    , Run StdinReader
+    ]
+  , sepChar  = "%"
+  , alignSep = "}{"
+  , template = " %StdinReader%}{ <fc=#FD971F>%cpu% %memory%  %date%</fc>"
+  }
