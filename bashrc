@@ -35,7 +35,7 @@ alias ...='cd ../..'
 cl() { cd $1; ls -la; }
 
 # Bashmarks
-alias cfg='cd ~/.wiredancer'
+alias cfg='cd ~/.eibon'
 alias doc='cd ~/doc'
 alias img='cd ~/img'
 alias muz='cd ~/muz'
