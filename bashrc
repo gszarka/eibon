@@ -29,6 +29,9 @@ alias la='ls -a --color=auto'
 alias ll='ls -l --color=auto'
 alias lla='ls -la --color=auto'
 
+# Colorize grep
+alias grep='grep --color=auto'
+
 # Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -36,6 +39,7 @@ cl() { cd $1; ls -la; }
 
 # Bashmarks
 alias cfg='cd ~/.eibon'
+alias dl='cd ~/dl'
 alias doc='cd ~/doc'
 alias img='cd ~/img'
 alias muz='cd ~/muz'
@@ -45,12 +49,21 @@ alias vid='cd ~/vid'
 # Common apps
 alias l='less'
 alias v='vim'
+alias vi='vim'
 alias untar='tar xvzf'
+alias play='mplayer'
+
+# reboot / halt
+alias reboot='sudo reboot'
+alias halt='sudo halt'
 
 # Misc
+alias c='clear'
 alias reload='source ~/.bashrc'
 alias nt='ping -c 5 index.hu'		#test network connection
 alias df='df -h'					#disk usage in human readable form
+alias wget='wget -c'				#resume wget by default
+alias bc='bc -l'
 
 # Completion -------------------------------------------------------------------
 complete -F _command source
